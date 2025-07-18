@@ -4,7 +4,6 @@ module "eks" {
 
   cluster_name                    = local.name
   cluster_endpoint_public_access = true
-  cluster_version = "1.32"
   
   cluster_addons = {
     coredns = {
